@@ -7,7 +7,7 @@ import (
 	safer "github.com/cstockton/go-safer"
 )
 
-func Example_kindOf() {
+func ExampleKindOf() {
 	val := []int{1, 2, 3}
 	kind := safer.KindOf(val)
 	fmt.Printf("KindOf(%#v) -> %v\n", val, kind)
@@ -16,7 +16,7 @@ func Example_kindOf() {
 	// KindOf([]int{1, 2, 3}) -> slice
 }
 
-func Example_pcForFunc() {
+func ExamplePCForFunc() {
 	// Obtain the PC from a function, this could be any func value.
 	pc := safer.PCForFunc(func() {})
 
@@ -24,5 +24,5 @@ func Example_pcForFunc() {
 	fmt.Println(runtime.FuncForPC(pc).Name())
 
 	// Output:
-	// github.com/cstockton/go-safer_test.Example_pcForFunc.func1
+	// github.com/cstockton/go-safer_test.ExamplePCForFunc.func1
 }
