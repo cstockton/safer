@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"runtime"
 
-	safer "github.com/cstockton/go-safer"
+	safer "github.com/cstockton/safer"
 )
 
 func ExampleKindOf() {
