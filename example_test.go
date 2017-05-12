@@ -24,5 +24,5 @@ func ExamplePCForFunc() {
 	fmt.Println(runtime.FuncForPC(pc).Name())
 
 	// Output:
-	// github.com/cstockton/go-safer_test.ExamplePCForFunc.func1
+	// github.com/cstockton/safer_test.ExamplePCForFunc.func1
 }
